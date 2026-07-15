@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart City - The Future of All</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- HOME SCREEN -->
+
+<div id="home" class="screen">
+
+    <div class="homeBox">
+
+        <h1>🏙 SMART CITY</h1>
+
+        <h2>The Future of All</h2>
+
+        <button id="openBtn">OPEN</button>
+
+    </div>
+
+</div>
+
+
+
+<!-- DASHBOARD -->
+
+<div id="dashboard" class="screen hidden">
+
+    <h1>SMART CITY CONTROL PANEL</h1>
+
+    <div class="stats">
+
+        <div class="card">
+            <h2>🌡 Temperature</h2>
+            <p>28°C</p>
+        </div>
+
+        <div class="card">
+            <h2>⚡ Power</h2>
+            <p>100%</p>
+        </div>
+
+        <div class="card">
+            <h2>💧 Water Level</h2>
+            <p>82%</p>
+        </div>
+
+    </div>
+
+    <div class="houses">
+
+        <button class="house" data-house="1">
+            🏠 Open House 1
+        </button>
+
+        <button class="house" data-house="2">
+            🏠 Open House 2
+        </button>
+
+        <button class="house" data-house="3">
+            🏠 Open House 3
+        </button>
+
+        <button class="house" data-house="4">
+            🏠 Open House 4
+        </button>
+
+        <button class="house" data-house="5">
+            🏠 Open House 5
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- HOUSE PAGE -->
+
+<div id="housePage" class="screen hidden">
+
+<h1 id="houseTitle">House</h1>
+
+<div class="houseCard">
+
+<h2>🔒 House Locked</h2>
+
+<p>
+This smart home is currently locked.
+</p>
+
+<button id="lockBtn">
+
+Open Lock
+
+</button>
+
+<div id="passwordArea" class="hidden">
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password">
+
+<br><br>
+
+<button id="unlockBtn">
+
+Unlock
+
+</button>
+
+</div>
+
+<h2 id="status"></h2>
+
+<br>
+
+<button id="backBtn">
+
+⬅ Back to Dashboard
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<div id="dashboard" class="screen hidden">
+
+  <div class="topBar">
+
+    <h2>🏙 VASUDHA Smart City</h2>
+
+    <div id="clock">00:00:00</div>
+
+</div>
+
+<div id="notificationArea"></div>
