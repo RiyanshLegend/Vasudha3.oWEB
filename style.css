@@ -764,3 +764,99 @@ transform:scale(.96);
 animation:fade .8s;
 
 }
+
+/* ===========================
+TOP BAR
+=========================== */
+
+.topBar{
+
+width:100%;
+
+max-width:1200px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:25px;
+
+}
+
+#clock{
+
+font-size:24px;
+
+font-weight:bold;
+
+background:rgba(255,255,255,.08);
+
+padding:12px 22px;
+
+border-radius:15px;
+
+box-shadow:0 0 20px rgba(0,170,255,.3);
+
+}
+
+/* ===========================
+NOTIFICATIONS
+=========================== */
+
+#notificationArea{
+
+position:fixed;
+
+right:20px;
+
+top:20px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+z-index:9999;
+
+}
+
+.notification{
+
+background:rgba(15,25,45,.95);
+
+border-left:5px solid #00c3ff;
+
+padding:15px 22px;
+
+border-radius:15px;
+
+min-width:260px;
+
+animation:slideIn .4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+@keyframes slideIn{
+
+from{
+
+transform:translateX(350px);
+
+opacity:0;
+
+}
+
+to{
+
+transform:translateX(0);
+
+opacity:1;
+
+}
+
+}
