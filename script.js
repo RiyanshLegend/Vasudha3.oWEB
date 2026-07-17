@@ -305,3 +305,8 @@ addNotification("📡 Network Online");
 // Automatically trigger after 20 seconds (for demo)
 // Remove this line if you don't want automatic simulation.
 setTimeout(triggerEmergency,20000);
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(() => console.log("Service Worker Registered"))
+    .catch(err => console.log(err));
+}
