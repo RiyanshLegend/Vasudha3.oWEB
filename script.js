@@ -234,6 +234,74 @@ notify("✅ Emergency Resolved","#00aa66");
 
 }
 
+// =======================
+// LIVE CLOCK
+// =======================
+
+function updateClock(){
+
+const now=new Date();
+
+document.getElementById("clock").innerHTML=
+
+now.toLocaleTimeString();
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+// =======================
+// NOTIFICATIONS
+// =======================
+
+function addNotification(message){
+
+const area=document.getElementById("notificationArea");
+
+const note=document.createElement("div");
+
+note.className="notification";
+
+note.innerHTML=message;
+
+area.appendChild(note);
+
+setTimeout(()=>{
+
+note.remove();
+
+},4000);
+
+}
+
+// Startup notifications
+
+setTimeout(()=>{
+
+addNotification("🟢 Smart City Connected");
+
+},1000);
+
+setTimeout(()=>{
+
+addNotification("⚡ Power Stable");
+
+},2500);
+
+setTimeout(()=>{
+
+addNotification("💧 Water Tank 82%");
+
+},4000);
+
+setTimeout(()=>{
+
+addNotification("📡 Network Online");
+
+},5500);
+
 // Automatically trigger after 20 seconds (for demo)
 // Remove this line if you don't want automatic simulation.
 setTimeout(triggerEmergency,20000);
